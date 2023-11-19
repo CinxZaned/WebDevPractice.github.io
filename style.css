@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(46, 46, 46);
+    padding: 10px;
+  }
+
+.title, .inner-title {
+    color: white;
+    text-align: center;
+}
+
+.inner-title {
+    padding-bottom: 10px;
+}
+
+hr {
+    margin-bottom: 10px;
+}
+
+.dim-A {
+    color: white;
+}
+
+.matrixA {
+    margin-left: 10px;
+    width: 50px;
+    border: 2px solid;
+    border-radius: 5px;
+    height: 30px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+span {
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#set-matrixA-dim, #set-matrixB-dim {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.inner-canvas {
+    border: 2px rgb(255, 255, 255);
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    max-width: 400px;
+    width: 100%;
+    background: rgb(46, 45, 45);
+    border-radius: 10px;
+    border-style: solid;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 5px rgb(19, 19, 19);
+}
+
+.set-value {
+    color: white;
+    margin-top: 10px;
+    padding: 5px 5px 5px 10px;
+}
+
+.submit-dim {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#set-dim {
+    color: white;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: rgb(46, 45, 45);
+}
+
+#set-dim:hover {
+    background: rgb(87, 86, 86);
+    box-shadow: 0px 0px 10px 2px rgb(19, 19, 19);;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="canvas">
+        <h1 class="title">MATRIX CALCULATOR</h1>
+        <div class="inner-canvas">
+            <h2 class="inner-title">
+                Matrix Multiplication
+            </h2>
+            <hr>
+            <div class="set-dimension" id="set-matrixA-dim">
+                <label class="dim-A">
+                    Matrix A dimension:
+                </label>
+                <input
+                    name="x1"
+                    id="x1"
+                    class="matrixA"
+                    inputmode="numeric"
+                    type="number"
+                    value="1"
+                    min="1"
+                    max="99"
+                    pattern="[0-9]*"
+                >
+                <span>&#215</span>
+                <input
+                    name="y1"
+                    id="y1"
+                    class="matrixA"
+                    inputmode="numeric"
+                    type="number"
+                    value="1"
+                    min="1"
+                    max="99"
+                    pattern="[0-9]*"
+                >
+            </div>
+            <div class="set-dimension" id="set-matrixB-dim">
+                <label class="dim-A">
+                    Matrix B dimension:
+                </label>
+                <input
+                    name="x2"
+                    id="x2"
+                    class="matrixA"
+                    inputmode="numeric"
+                    type="number"
+                    value="1"
+                    min="1"
+                    max="99"
+                    pattern="[0-9]*"
+                >
+                <span>&#215</span>
+                <input
+                    name="y2"
+                    id="y2"
+                    class="matrixA"
+                    inputmode="numeric"
+                    type="number"
+                    value="1"
+                    min="1"
+                    max="99"
+                    pattern="[0-9]*"
+                >
+            </div>
+            <div class="submit-dim">
+                <input 
+                    type="submit"
+                    class="submitButton"
+                    id="set-dim"
+                    value="Set Matrix"
+                >
+            </div>
+        </div>
+    </div>
+</body>
+</html>
