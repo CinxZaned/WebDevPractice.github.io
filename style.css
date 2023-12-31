@@ -166,7 +166,9 @@ span {
 }
   
 .window-content {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: white;
     word-wrap: break-word;
@@ -199,8 +201,14 @@ span {
     border-collapse: collapse;
 }
 
-td {
+td, th {
     border: 1px solid rgb(255, 255, 255);
-    padding: 8px;
+    padding: 5px;
     background-color: transparent;
+}
+
+.inputMatA, .inputMatB {
+    text-align: center;
+    width: 40px;
+    font-size: 15px;
 }
