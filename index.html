@@ -1,85 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matrix Calculator</title>
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://github.com/web-fonts/dejavu-sans/blob/master/css/dejavu-sans.css"
+    />
+  </head>
+  <body>
     <div class="canvas">
-        <h1 class="title">MATRIX CALCULATOR</h1>
-        <div class="inner-canvas">
-            <h2 class="inner-title">
-                Matrix Multiplication
-            </h2>
-            <hr>
-            <div class="set-dimension" id="set-matrixA-dim">
-                <label class="dim-A">
-                    Matrix A dimension:
-                </label>
-                <input
-                    name="x1"
-                    id="x1"
-                    class="matrixA"
-                    inputmode="numeric"
-                    type="number"
-                    value="1"
-                    min="1"
-                    max="99"
-                    pattern="[0-9]*"
-                >
-                <span>&#215</span>
-                <input
-                    name="y1"
-                    id="y1"
-                    class="matrixA"
-                    inputmode="numeric"
-                    type="number"
-                    value="1"
-                    min="1"
-                    max="99"
-                    pattern="[0-9]*"
-                >
-            </div>
-            <div class="set-dimension" id="set-matrixB-dim">
-                <label class="dim-A">
-                    Matrix B dimension:
-                </label>
-                <input
-                    name="x2"
-                    id="x2"
-                    class="matrixA"
-                    inputmode="numeric"
-                    type="number"
-                    value="1"
-                    min="1"
-                    max="99"
-                    pattern="[0-9]*"
-                >
-                <span>&#215</span>
-                <input
-                    name="y2"
-                    id="y2"
-                    class="matrixA"
-                    inputmode="numeric"
-                    type="number"
-                    value="1"
-                    min="1"
-                    max="99"
-                    pattern="[0-9]*"
-                >
-            </div>
-            <div class="submit-dim">
-                <input 
-                    type="submit"
-                    class="submitButton"
-                    id="set-dim"
-                    value="Set Matrix"
-                >
-            </div>
+      <h1 class="title">MATRIX CALCULATOR</h1>
+      <div class="inner-canvas">
+        <h2 class="inner-title">Matrix Multiplication</h2>
+        <hr />
+        <div class="set-dimension" id="set-matrixA-dim">
+          <label class="dim-A"> Matrix A dimension: </label>
+          <input
+            name="x1"
+            id="x1"
+            class="matrixA"
+            inputmode="numeric"
+            type="number"
+            value="2"
+            min="1"
+            max="99"
+            pattern="[0-9]*"
+          />
+          <span>&times;</span>
+          <input
+            name="y1"
+            id="y1"
+            class="matrixA"
+            inputmode="numeric"
+            type="number"
+            value="3"
+            min="1"
+            max="99"
+            pattern="[0-9]*"
+          />
         </div>
+        <div class="set-dimension" id="set-matrixB-dim">
+          <label class="dim-A"> Matrix B dimension: </label>
+          <input
+            name="x2"
+            id="x2"
+            class="matrixA"
+            inputmode="numeric"
+            type="number"
+            value="3"
+            min="1"
+            max="99"
+            pattern="[0-9]*"
+          />
+          <span>&times;</span>
+          <input
+            name="y2"
+            id="y2"
+            class="matrixA"
+            inputmode="numeric"
+            type="number"
+            value="2"
+            min="1"
+            max="99"
+            pattern="[0-9]*"
+          />
+        </div>
+        <div class="submit-dim">
+          <button class="set-button" id="set-dim">Set Matrix</button>
+        </div>
+      </div>
+      <div class="window-bg">
+        <div class="window-container">
+          <div class="window" id="window-a">
+            <div class="window-header">
+              <p>Matrix A input</p>
+            </div>
+            <hr />
+            <div class="window-content">
+              <form action="" class="matrix">
+                <div class="table-insert">
+                  <table id="tableA">
+
+                  </table>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="window" id="window-b">
+            <div class="window-header">
+              <span class="close">&#10006;</span>
+              <p>Matrix B input</p>
+            </div>
+            <hr />
+            <div class="window-content">
+              <form action="" class="matrix">
+                <div class="table-insert">
+                  <table id="tableB"></table>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
