@@ -17,60 +17,71 @@
       <div class="inner-canvas">
         <h2 class="inner-title">Matrix Multiplication</h2>
         <hr />
-        <div class="set-dimension" id="set-matrixA-dim">
-          <label class="dim-A"> Matrix A dimension: </label>
-          <input
-            name="x1"
-            id="x1"
-            class="matrixA"
-            inputmode="numeric"
-            type="number"
-            value="2"
-            min="1"
-            max="99"
-            pattern="[0-9]*"
-          />
-          <span>&times;</span>
-          <input
-            name="y1"
-            id="y1"
-            class="matrixA"
-            inputmode="numeric"
-            type="number"
-            value="3"
-            min="1"
-            max="99"
-            pattern="[0-9]*"
-          />
+        <div class="dim-input" id="dim-input">
+          <div class="set-dimension" id="set-matrixA-dim">
+            <label class="dim-A"> Matrix A dimension: </label>
+            <input
+              name="x1"
+              id="x1"
+              class="matrixA"
+              inputmode="numeric"
+              type="number"
+              value="2"
+              min="1"
+              max="99"
+              pattern="[0-9]*"
+            />
+            <span>&times;</span>
+            <input
+              name="y1"
+              id="y1"
+              class="matrixA"
+              inputmode="numeric"
+              type="number"
+              value="3"
+              min="1"
+              max="99"
+              pattern="[0-9]*"
+            />
+          </div>
+          <div class="set-dimension" id="set-matrixB-dim">
+            <label class="dim-A"> Matrix B dimension: </label>
+            <input
+              name="x2"
+              id="x2"
+              class="matrixA"
+              inputmode="numeric"
+              type="number"
+              value="3"
+              min="1"
+              max="99"
+              pattern="[0-9]*"
+            />
+            <span>&times;</span>
+            <input
+              name="y2"
+              id="y2"
+              class="matrixA"
+              inputmode="numeric"
+              type="number"
+              value="2"
+              min="1"
+              max="99"
+              pattern="[0-9]*"
+            />
+          </div>
+          <div class="submit-dim">
+            <button class="set-button" id="set-dim">Set Matrix</button>
+          </div>
         </div>
-        <div class="set-dimension" id="set-matrixB-dim">
-          <label class="dim-A"> Matrix B dimension: </label>
-          <input
-            name="x2"
-            id="x2"
-            class="matrixA"
-            inputmode="numeric"
-            type="number"
-            value="3"
-            min="1"
-            max="99"
-            pattern="[0-9]*"
-          />
-          <span>&times;</span>
-          <input
-            name="y2"
-            id="y2"
-            class="matrixA"
-            inputmode="numeric"
-            type="number"
-            value="2"
-            min="1"
-            max="99"
-            pattern="[0-9]*"
-          />
-        </div>
-        <div class="submit-dim">
-          <button class="set-button" id="set-dim">Set Matrix</button>
+        <div class="result-section" id="result-section">
+          <h3 class="result-title">RESULT</h3>
+          <div class="solve-another-btn">
+            <button class="another-btn" id="another-btn">Solve another calculation</button>
+          </div>
+          <div class="the-result" id="the-result">
+
+          </div>
         </div>
       </div>
       <div class="window-bg">
@@ -81,11 +92,17 @@
             </div>
             <hr />
             <div class="window-content">
-              <form action="" class="matrix">
+              <form class="matrix" id="matrixA">
                 <div class="table-insert">
-                  <table id="tableA">
-
-                  </table>
+                  <table id="tableA"></table>
+                </div>
+                <div class="button-opt">
+                  <button type="reset" class="reset-btn" id="reset-btnA">
+                    Reset
+                  </button>
+                  <button type="button" class="fill-zero" id="fill-zeroA">
+                    Fill zero
+                  </button>
                 </div>
               </form>
             </div>
@@ -97,9 +114,22 @@
             </div>
             <hr />
             <div class="window-content">
-              <form action="" class="matrix">
+              <form class="matrix" id="matrixB">
                 <div class="table-insert">
                   <table id="tableB"></table>
+                </div>
+                <div class="button-opt">
+                  <button type="reset" class="reset-btn" id="reset-btn">
+                    Reset
+                  </button>
+                  <button type="button" class="fill-zero" id="fill-zeroB">
+                    Fill zero
+                  </button>
+                  <div class="solve-btn">
+                    <button type="button" class="calculate" id="calculate">
+                      Calculate
+                    </button>
+                  </div>
                 </div>
               </form>
             </div>

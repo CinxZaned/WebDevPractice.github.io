@@ -64,6 +64,29 @@ span {
     box-shadow: 0px 0px 10px 5px rgb(19, 19, 19);
 }
 
+.dim-input {
+    display: block;
+    z-index: 0;
+}
+
+.result-section {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: none;
+    z-index: 0;
+}
+
+.the-result {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .set-value {
     color: white;
     margin-top: 10px;
@@ -84,7 +107,11 @@ span {
     background: rgb(46, 45, 45);
 }
 
-#set-dim:hover {
+#set-dim:hover,
+.reset-btn:hover,
+.fill-zero:hover,
+.calculate:hover,
+.another-btn:hover {
     background: rgb(87, 86, 86);
     box-shadow: 0px 0px 10px 2px rgb(19, 19, 19);;
 }
@@ -128,9 +155,9 @@ span {
     border-style: solid;
     padding: 0px 10px 10px;
     -webkit-animation-name: slideIn;
-    -webkit-animation-duration: 0.4s;
+    -webkit-animation-duration: 0.8s;
     animation-name: slideIn;
-    animation-duration: 0.4s
+    animation-duration: 0.8s
 }
   
   /* The Close Button */
@@ -176,13 +203,13 @@ span {
   
   /* Add Animation */
 @-webkit-keyframes slideIn {
-    from {bottom: -300px; opacity: 0} 
-    to {bottom: 50%; opacity: 1}
+    from {bottom: -500px; opacity: 0} 
+    to {bottom: 25%; opacity: 1}
 }
   
 @keyframes slideIn {
-    from {bottom: -300px; opacity: 0}
-    to {bottom: 50%; opacity: 1}
+    from {bottom: -500px; opacity: 0}
+    to {bottom: 25%; opacity: 1}
 }
   
 @-webkit-keyframes fadeIn {
@@ -197,7 +224,7 @@ span {
 
 /* --------------table insert------------- */
 
-#tableA, #tableB {
+#tableA, #tableB, #table-result {
     border-collapse: collapse;
 }
 
@@ -210,5 +237,40 @@ td, th {
 .inputMatA, .inputMatB {
     text-align: center;
     width: 40px;
-    font-size: 15px;
+    font-size: 13px;
+}
+
+.subIndex {
+    display: inline-block;
+    margin-left: -9px;
+    position: relative;
+    bottom: -4px;
+    font-size: 10pt;
+}
+
+/* ----------------button----------------- */
+
+.button-opt, .solve-btn,
+.solve-another-btn {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.reset-btn, .fill-zero,
+.another-btn {
+    margin: auto 2px;
+    color: white;
+    padding: 4px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: rgb(46, 45, 45);
+}
+
+.calculate {
+    color: white;
+    padding: 4px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: rgb(46, 45, 45);
 }
