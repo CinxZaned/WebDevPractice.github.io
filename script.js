@@ -87,6 +87,7 @@ function generateTableA() {
                     inputMatA.id = "matA"+i+j;
                     inputMatA.autocomplete = "off";
                     inputMatA.pattern = "[0-9/.]*";
+                    inputMatA.inputMode = "numeric";
                     cellA.appendChild(inputMatA);
                     tRowA.appendChild(cellA);
                 }
@@ -138,6 +139,7 @@ function generateTableB() {
                     inputMatB.title = `[${i},${j}]`;
                     inputMatB.autocomplete = "off";
                     inputMatB.pattern = "[0-9/.]*";
+                    inputMatB.inputMode = "numeric";
                     cellB.appendChild(inputMatB);
                     tRowB.appendChild(cellB);
                 }

@@ -69,6 +69,12 @@ span {
     z-index: 0;
 }
 
+.set-dimension {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .result-section {
     text-align: center;
     justify-content: center;
@@ -273,4 +279,21 @@ td, th {
     border: 1px solid white;
     border-radius: 5px;
     background: rgb(46, 45, 45);
+}
+
+@media(max-width: 427px) {
+    .window-container {
+        display: block;
+        text-align: center;
+    }
+
+    .window {
+        margin: 15px auto;
+    }
+}
+
+@media(max-width: 343px) {
+    .set-dimension {
+        display: block;
+    }
 }
